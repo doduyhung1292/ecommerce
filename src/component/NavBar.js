@@ -7,7 +7,7 @@ export default function NavBar(params) {
         <div>
             <Navbar bg="light" expand="lg">
   <Container fluid>
-    <Navbar.Brand href="#" style = {{marginLeft: "40px", fontSize: '2.3rem', fontWeight: 700}}>FISHU</Navbar.Brand>
+    <Navbar.Brand href="/" style = {{marginLeft: "40px", fontSize: '2.3rem', fontWeight: 700}}>FISHU</Navbar.Brand>
     <NavDropdown title="Categories" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Electronics</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">Jewelery</NavDropdown.Item>

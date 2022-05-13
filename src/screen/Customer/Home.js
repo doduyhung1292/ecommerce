@@ -6,15 +6,6 @@ import { Carousel, img, Button, Container, Row, Col, Card } from 'react-bootstra
 
 export default function Home() {
     const [products, setProducts] = useState('');
-    useEffect(() => {
-    const fetchData = async () => {
-            await fetch('https://fakestoreapi.com/products?limit=10')
-                .then((res) => res.json())
-                .then((res) => {
-                    setProducts(res);
-                    console.log(res);}) 
-            }  
-    }, [])
     const createRate = () => {
         axios.get('https://fakestoreapi.com/products?limit=4')
             .then(res => setProducts(res.data))
@@ -84,10 +75,10 @@ export default function Home() {
                                         </p>
                                     </Card.Text>
                                     <Card.Text>
-                                      {data.price}
+                                      ${data.price}
                                     </Card.Text>
                                     <Button variant="primary">Add to card</Button>
-                                    <Button variant="primary" style={{marginLeft: '1.5px'}}>More</Button>
+                                    <Button variant="primary" href={"http://localhost:3000/product/" + data.id} style={{marginLeft: '1.5px'}}>More</Button>
                                   </Card.Body>
                                 </Card>
                             </Col>))}
