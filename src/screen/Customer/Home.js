@@ -52,9 +52,9 @@ export default function Home() {
                 </Row>
             </Container>
             </div>
-            <Container style = {{maxWidth: '100%', marginTop: '1.5rem'}}>
+            <Container style = {{maxWidth: '100%', marginTop: '1.5rem', margin: '0.5rem'}}>
                 <Row>
-                    <Col xs={3}>
+                    <Col xs={3} style={{backgroundColor: "#f5f5f5"}}>
                         <Nava />
                     </Col>
                     <Col xs={9}>

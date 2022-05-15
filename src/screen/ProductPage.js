@@ -103,8 +103,8 @@ export default function ProductPage() {
                 <Row>
                     {
                         products && products.map((data, index) => (
-                            <Col xs={2}>
-                                <Card style={{ width: '8rem', height: '16rem'}}>
+                            <Col xs={3}>
+                                <Card style={{ width: '10rem', height: '16rem', textAlign: 'center'}}>
                                   <Card.Img variant="top" src={data.image} 
                                   style={{maxHeight: '8rem', maxWidth: '8rem'}}/>
                                   <Card.Body style={{padding: 0, paddingTop: '16px'}}>

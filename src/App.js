@@ -1,5 +1,6 @@
 import Home from './screen/Customer/Home.js';
 import ProductPage from './screen/ProductPage.js';
+import Login from './screen/Login.js';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -11,6 +12,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}> </Route>
+        <Route path="/login" element={<Login />}> </Route>
         <Route path="/product" element={<ProductPage />}>
           <Route path=":productID" element={<ProductPage />} />
         </Route>
